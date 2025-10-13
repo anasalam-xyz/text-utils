@@ -17,7 +17,7 @@ function App() {
   const toggleMode =()=> {
     mode==="light"?setMode("dark"):setMode("light");
     showAlert("success", mode==="light"?"Enabled Dark Mode":"Enabled Light Mode");
-    document.title = "Text Utils - "+mode.charAt(0).toUpperCase()+mode.slice(1);
+    // document.title = "Text Utils - "+mode.charAt(0).toUpperCase()+mode.slice(1);
     document.body.style.backgroundColor = mode==="dark"?"white":"#042743";
   }
   const toggleCherryMode =()=> {
